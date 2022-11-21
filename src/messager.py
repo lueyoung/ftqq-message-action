@@ -38,7 +38,7 @@ class Messager(object):
         self.send()
 
     def send(self):
-        url = "https://sctapi.ftqq.com/" + self.args.token + ".send"
+        url = "https://sctapi.ftqq.com/" + self.args.sckey + ".send"
         if self.args.content == '':
             url += "?text=" + self.args.title
             requests.get(url)
