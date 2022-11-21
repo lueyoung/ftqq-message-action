@@ -6,13 +6,13 @@ on:
       - master
 
 jobs:
-  update-cheatsheet:
+  test-massager:
     runs-on: ubuntu-18.04
     steps:
       - name: 'test'
         uses: lueyoung/ftqq-message-action@master
         with:
-          token: ${{ secrest.token }}
+          token: ${{ secrets.token }}
           enable: true
           title: "test0x01"
           content: "test9527"
