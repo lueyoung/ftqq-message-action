@@ -1,0 +1,18 @@
+name: 'Test ftqq message action'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-cheatsheet:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 'test'
+        uses: lueyoung/ftqq-message-action@master
+        with:
+          token: ${{ secrest.token }}
+          enable: true
+          title: "test0x01"
+          content: "test9527"

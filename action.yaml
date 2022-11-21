@@ -1,0 +1,27 @@
+name: "Ftqq Message Action."
+description: "Send ftqq message."
+author: "lueyoung"
+branding:
+  icon: "upload-cloud"
+  color: "gray-dark"
+inputs:
+  enable:
+    description: "Enable sending messages."
+    default: false
+  token:
+    description: "Ftqq send key."
+    required: true
+  title:
+    description: "The title of a message."
+    required: true
+  content:
+    description: "The content of a message."
+    default: ''
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.enable }}
+    - ${{ inputs.token }}
+    - ${{ inputs.title }}
+    - ${{ inputs.content }}
