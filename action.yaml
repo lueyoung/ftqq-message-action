@@ -8,7 +8,7 @@ inputs:
   enable:
     description: "Enable sending messages."
     default: false
-  token:
+  sckey:
     description: "Ftqq send key."
     required: true
   title:
@@ -22,6 +22,6 @@ runs:
   image: "Dockerfile"
   args:
     - ${{ inputs.enable }}
-    - ${{ inputs.token }}
+    - ${{ inputs.sckey }}
     - ${{ inputs.title }}
     - ${{ inputs.content }}

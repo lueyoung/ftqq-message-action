@@ -12,7 +12,7 @@ jobs:
       - name: 'test'
         uses: lueyoung/ftqq-message-action@master
         with:
-          token: ${{ secrets.token }}
+          sckey: ${{ secrets.SCKEY }}
           enable: true
-          title: "test0x01"
-          content: "test9527"
+          title: "test0x02"
+          content: "test95271"
