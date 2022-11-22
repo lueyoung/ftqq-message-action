@@ -9,6 +9,7 @@ RUN python -m pip install --upgrade pip
 RUN pip install -r /requirements.txt
 
 ADD entrypoint.sh /
+RUN chmod a+x /entrypoint.sh
 ADD src /src
 ADD action.yaml /
 
