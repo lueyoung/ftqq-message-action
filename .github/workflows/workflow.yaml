@@ -4,15 +4,15 @@ on:
   push:
     branches:
       - master
+      - dev
 
 jobs:
   test-massager:
     runs-on: ubuntu-18.04
     steps:
       - name: 'test'
-        uses: lueyoung/ftqq-message-action@master
+        uses: lueyoung/ftqq-message-action@dev
         with:
           sckey: ${{ secrets.SCKEY }}
-          enable: true
-          title: "test0x02"
-          content: "test95271"
+          title: "test0x03"
+          content: "test9527"

@@ -7,7 +7,7 @@ branding:
 inputs:
   enable:
     description: "Enable sending messages."
-    default: false
+    default: true
   sckey:
     description: "Ftqq send key."
     required: true
